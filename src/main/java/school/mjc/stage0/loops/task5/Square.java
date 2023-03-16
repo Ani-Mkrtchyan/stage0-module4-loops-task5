@@ -5,7 +5,7 @@ public class Square {
         for (int i = 0; i <= sideLength; i++) {
             for (int j = 0; j <= sideLength; j++) {
                 if (i == 1 || i == sideLength || j == 1 || j == sideLength) {
-                    System.out.print("s ");
+                    System.out.print("8 ");
                 } else {
                     System.out.print("  ");
 
