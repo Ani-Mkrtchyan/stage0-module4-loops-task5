@@ -2,21 +2,23 @@ package school.mjc.stage0.loops.task5;
 
 public class Rectangle {
     public void printRectangleFrom8s(int length, int height) {
-        for (int i = 0; i < length; i++) {
-            for (int j = 0; j < height; j++) {
-                if (i == 0 || i == length - 1 || j == 0 || j == height - 1) {
-                    System.out.print(" 8 ");
-                } else {
-                    System.out.print("   ");
+        for (int i = 0; i < height; i++) {
+            for (int j = 0; j < length; j++) {
+                if (i == 0 || i == height - 1 || j == 0 || j == length - 1) {
+                    System.out.print("8");
                 }
+            else{
+                System.out.print(" ");
             }
-            System.out.println();
         }
+        System.out.println();
 
-    }
+    }}
 
     public static void main(String[] args) {
         Rectangle rectangle = new Rectangle();
-        rectangle.printRectangleFrom8s(8, 8);
+        rectangle.printRectangleFrom8s(5, 5);
+        //rectangle.printRectangleFrom8s(6,5);
+        //rectangle.printRectangleFrom8s(0,0);
     }
 }
